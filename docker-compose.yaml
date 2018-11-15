@@ -5,6 +5,7 @@ version: '2.1'
 services:
   web:
     image: liberit/gridcoin
+    container_name: gridcoin
     restart: always
     volumes:
       - $HOME/.GridcoinResearch:/root/.GridcoinResearch
