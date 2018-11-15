@@ -1,0 +1,15 @@
+---
+
+version: '2.1'
+
+services:
+  web:
+    image: liberit/gridcoin
+    restart: always
+    volumes:
+      - $HOME/.GridcoinResearch:/root/.GridcoinResearch
+
+networks:
+  default:
+    external:
+      name: nginx-proxy_net
