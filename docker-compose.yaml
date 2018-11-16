@@ -9,6 +9,7 @@ services:
     restart: always
     volumes:
       - $HOME/.GridcoinResearch:/root/.GridcoinResearch
+      - /var/lib/boinc-client:/var/lib/boinc-client
 
 networks:
   default:
